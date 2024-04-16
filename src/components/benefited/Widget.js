@@ -22,18 +22,18 @@ export default function Widget () {
                 <div className="block-icon flex-shrink-0 me-5">
                   <img
                     src={benefite.image}
-                    height={100}
-                    width={100}
+                    height={70}
+                    width={70}
                     alt="error"
     
                   />
                 </div>
 
                 <div className="block-inner" style={{width: "50%"}}>
-                  <h3 className="title mb-4 h5" style={{fontSize: "100%", width: "100px"}}>{benefite.title}</h3>
+                  <h3 className="title mb-2 h5" style={{fontSize: "70%"}}>{benefite.title}</h3>
 
                   <div className="description rte mt-n3 mb-0 fs-6">
-                    <p>{benefite.description}</p>
+                    <p style={{fontSize: "70%"}}>{benefite.description}</p>
                   </div>
                 </div>
               </div>

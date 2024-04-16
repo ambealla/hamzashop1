@@ -20,6 +20,8 @@ import Type3 from "../assets/img/types/couch.svg";
 import Type4 from "../assets/img/types/desk.svg";
 
 import benefites1 from "../assets/productHamza/ADShamza/laivraison.svg";
+import garntie from "../assets/productHamza/ADShamza/garantie.svg";
+import satisfaction from "../assets/productHamza/ADShamza/satisfait.png";
 
 export const itens = [
   {
@@ -130,13 +132,13 @@ export const benefites = [
   {
     id: 2,
     title: "GARANTIE À 100%",
-    image: benefites1,
+    image: garntie,
     description : "   La garantie inclut tous les produits du magasin."
   },
   {
     id: 3,
     title: "100% SATISFAIT OU REMBOURSEMENT",
-    image: benefites1,
+    image: satisfaction,
     description : " Vous pouvez prévisualiser gratuitement votre commande chez le livreur."
   },
 ];

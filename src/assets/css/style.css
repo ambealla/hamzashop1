@@ -1,6 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Bodoni:ital,wght@0,600;1,700&family=Montserrat:wght@500&family=Open+Sans:wght@300;500&family=Oswald:wght@200&family=Poppins:wght@700&family=Roboto&family=Roboto+Slab:wght@300&family=Tiro+Gurmukhi&display=swap');
+
+.firstImprission {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: "#198754"
+}
+
+.imgbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/productHamza/ADShamza/yed2.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Adjust the opacity value as needed */
+}
+
 :root {
   --brand-color__primary-0: #639187;
-  --brand-color__primary-2: #11463d;;
+  --brand-color__primary-2: #11463d;
+  ;
   --font-title-1: normal 20px Segoe UI;
   --font-paragrafo: normal 17px/24px Segoe UI;
   --font-subtitle-1: 600 17px Segoe UI;
@@ -110,17 +134,19 @@
     flex-basis: 100%;
   }
 }
-.bg-secondary1{
-  background-color: rgb(88 107 209)  !important;
+
+.bg-secondary1 {
+  background-color: rgb(88 107 209) !important;
 }
 
 
-.flex2{
+.flex2 {
   display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
-.ctbox{
+
+.ctbox {
   box-sizing: content-box !important;
 }
