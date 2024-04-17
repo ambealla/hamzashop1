@@ -6,7 +6,11 @@
   font-style: normal;
   color: "#198754"
 }
-
+.lvGrat{
+  font-family: ui-monospace !important;
+  margin-bottom: 0px !important;
+  font-size: 20px !important 
+}
 .imgbg {
   position: absolute;
   top: 0;
@@ -126,9 +130,7 @@
 
 @media (max-width: 700px) {
 
-  .price {
-    display: none;
-  }
+
 
   .card {
     flex-basis: 100%;

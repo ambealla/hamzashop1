@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
-
+import emailjs from '@emailjs/browser';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    productId: '',
-    phone: '',
-    email: ''
+    from_name: '',
+    form_produit: '',
+    form_number: '',
+    from_email :''
   });
 
   const handleChange = (e) => {
@@ -16,7 +16,7 @@ const ContactForm = () => {
       [name]: value
     });
   };
-
+  const form = useRef();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -37,54 +37,78 @@ const ContactForm = () => {
       alert('Failed to submit form. Please try again.');
     }
   };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_hitwivl', 'template_ul4otng', form.current, '_RsuJRkBTXoJJbTUx')
+      .then((result) => { 
+        alert('شكرا على ثقتكم 🙏   سنتواصل معكم في أقرب وقت ممكن');
+      
+          console.log(result.text);
+
+      }, (error) => {
+ 
+          alert('المرجو ادخال جميع المعلومات');
+        
+      });
+  };
 
   return (
     <Container>
       <Row>
         <Col md={6} className="mx-auto">
-          <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formName">
-              <Form.Label>Name</Form.Label>
+          <Form ref={form} onSubmit={sendEmail}>
+            <Form.Group className ="m-4" controlId="formName">
+              <Form.Label>votre Nom</Form.Label>
               <Form.Control
                 type="text"
-                name="name"
+                name="from_name"
                 value={formData.name}
                 onChange={handleChange}
                 required
               />
             </Form.Group>
-            <Form.Group controlId="formProductId">
-              <Form.Label>Product ID</Form.Label>
-              <Form.Control
-                type="text"
-                name="productId"
-                value={formData.productId}
+            <Form.Group className ="m-4" controlId="formProductId">
+              <Form.Label>numero de produit</Form.Label>
+            
+               <Form.Select  name="form_produit"
+                value={formData.form_produit}
                 onChange={handleChange}
-                required
-              />
+                required aria-label="Default select example">
+    <option></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+  </Form.Select>
             </Form.Group>
-            <Form.Group controlId="formPhone">
-              <Form.Label>Phone Number</Form.Label>
+            <Form.Group className ="m-4" controlId="formPhone">
+              <Form.Label>numero de telephone</Form.Label>
               <Form.Control
                 type="tel"
-                name="phone"
+                name="form_number"
                 value={formData.phone}
                 onChange={handleChange}
                 required
               />
             </Form.Group>
-            <Form.Group controlId="formEmail">
-              <Form.Label>Email</Form.Label>
+            <Form.Group className ="m-4" controlId="formPhone">
+              <Form.Label>Votre ville</Form.Label>
               <Form.Control
-                type="email"
-                name="email"
-                value={formData.email}
+                type="text"
+                name="from_email"
+                value={formData.from_email}
                 onChange={handleChange}
                 required
               />
             </Form.Group>
+           
+   
             <div style={{width: "100%", display:"flex",margin:"20px",alignItems: "Center"}}>
-              <Button variant="primary" type="submit">
+              <Button style={{backgroundColor:"#198754"}} type="submit" onSubmit={sendEmail}> 
               Submit
             </Button></div>
           </Form>

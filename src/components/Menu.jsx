@@ -12,7 +12,7 @@ export default function Menu() {
     window.open(`https://wa.me/212656676532`, '_blank');
   };
   return (
-    <Navbar className='' style={{backgroundColor:"#198754", color:"white"}} expand="md" widht="100%">
+    <Navbar className='' style={{backgroundColor:"#198754", color:"#ffffff !important"}} expand="md" widht="100%">
       <Container>
         <Navbar.Brand href="#home">
           <img id="logo" src={Logo} alt="Logotipo"  widht={80} height={80}  style={ {   

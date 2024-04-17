@@ -22,7 +22,7 @@ export default function Principal() {
            
       <ListProducts />
       <Widget />
-      <Newsletter />
+   
       <ContactForm />
       <Footer />
     </>
