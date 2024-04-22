@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hamzashop1/static/css/main.21e262b0.css",
-    "main.js": "/hamzashop1/static/js/main.347b0309.js",
+    "main.js": "/hamzashop1/static/js/main.14914846.js",
     "static/media/yed.jpg": "/hamzashop1/static/media/yed.e74cbd142f548b3663b3.jpg",
     "static/media/yed2.jpg": "/hamzashop1/static/media/yed2.35dce24a9aa869080785.jpg",
     "static/media/aa.jpg": "/hamzashop1/static/media/aa.e0c728cedf153a7c3cfb.jpg",
@@ -22,13 +22,13 @@
     "static/media/satisfait.png": "/hamzashop1/static/media/satisfait.49a43fdb5ef905a68904.png",
     "static/media/desk.svg": "/hamzashop1/static/media/desk.8366d68720c9758d8e272a5c1c617f36.svg",
     "static/media/garantie.svg": "/hamzashop1/static/media/garantie.cc69451f0aa6b6529c8cc7bafe11aa90.svg",
-    "static/media/laivraison.svg": "/hamzashop1/static/media/laivraison.1919ca1e6945abb99463f23620cf25a4.svg",
+    "static/media/laivraison.svg": "/hamzashop1/static/media/laivraison.4024be7fb7220468cc1a55ff5f00059a.svg",
     "index.html": "/hamzashop1/index.html",
     "main.21e262b0.css.map": "/hamzashop1/static/css/main.21e262b0.css.map",
-    "main.347b0309.js.map": "/hamzashop1/static/js/main.347b0309.js.map"
+    "main.14914846.js.map": "/hamzashop1/static/js/main.14914846.js.map"
   },
   "entrypoints": [
     "static/css/main.21e262b0.css",
-    "static/js/main.347b0309.js"
+    "static/js/main.14914846.js"
   ]
 }
